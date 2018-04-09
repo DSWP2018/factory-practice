@@ -6,10 +6,9 @@ import com.iteso.factory.InstallerPackage;
 /**
  * Created by Rodrigov on 04/09/2018.
  */
-public class WindowsInstaller extends Installer {
-    public WindowsInstaller(){
-        name = "Windows Installer";
-
+public class LinuxFree extends Installer {
+    public LinuxFree(){
+        name = "Linux Free Installer";
 
     }
 
