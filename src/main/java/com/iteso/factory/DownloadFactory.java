@@ -6,7 +6,7 @@ package com.iteso.factory;
  * Date: 4/09/18
  */
 public abstract class DownloadFactory {
-    private String targetOS = "GenericOS"; //Agregamos un tipo de pozole
+    private String targetOS = "GenericOS";
 
     public Installer downloadInstaller(String operatingSystem){
         Installer installer;
@@ -16,7 +16,7 @@ public abstract class DownloadFactory {
         return installer;
     }
 
-    protected abstract Installer createInstallerPackage(String operatingSystem);
+    protected abstract Installer createInstallerPackage(String operatingSystemVersion);
 
 
     public String getTargetOS() {
