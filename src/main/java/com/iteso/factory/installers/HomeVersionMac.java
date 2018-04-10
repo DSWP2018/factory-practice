@@ -7,7 +7,8 @@ import com.iteso.factory.InstallerPackage;
 public class HomeVersionMac extends Installer {
     @Override
     public InstallerPackage getPackage() {
-        return null;
+        InstallerPackage inst = new Mac();
+        return inst;
     }
     @Override
     public void getVersion(){

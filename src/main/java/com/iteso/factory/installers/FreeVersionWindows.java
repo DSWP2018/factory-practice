@@ -7,7 +7,8 @@ import com.iteso.factory.InstallerPackage;
 public class FreeVersionWindows extends Installer {
     @Override
     public InstallerPackage getPackage() {
-        return null;
+        InstallerPackage inst = new Windows();
+        return inst;
     }
     @Override
     public void getVersion(){

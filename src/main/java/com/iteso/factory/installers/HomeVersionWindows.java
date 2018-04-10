@@ -7,7 +7,8 @@ import com.iteso.factory.InstallerPackage;
 public class HomeVersionWindows extends Installer {
     @Override
     public InstallerPackage getPackage() {
-        return null;
+        InstallerPackage inst = new Windows();
+        return inst;
     }
     @Override
     public void getVersion(){

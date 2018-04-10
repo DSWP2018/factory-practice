@@ -9,11 +9,14 @@ public class Main {
         DownloadFactory freeWindows = new WindowsInstaller();
         Installer free = freeWindows.createInstallerPackage("Free");
         free.getVersion();
+        free.getPackage().encode();
         DownloadFactory homeLinux = new LinuxInstaller();
         Installer home = homeLinux.createInstallerPackage("Home");
         home.getVersion();
+        home.getPackage().encode();
         DownloadFactory proMac = new MacInstaller();
         Installer prof = proMac.createInstallerPackage("Profesional");
         prof.getVersion();
+        prof.getPackage().encode();
     }
 }

@@ -7,7 +7,8 @@ import com.iteso.factory.InstallerPackage;
 public class ProfesionalVersionLinux extends Installer {
     @Override
     public InstallerPackage getPackage() {
-        return null;
+        InstallerPackage inst = new Linux();
+        return inst;
     }
     @Override
     public void getVersion(){
