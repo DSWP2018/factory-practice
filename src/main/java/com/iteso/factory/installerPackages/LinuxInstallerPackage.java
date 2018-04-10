@@ -2,25 +2,25 @@ package com.iteso.factory.installerPackages;
 
 import com.iteso.factory.InstallerPackage;
 
-public class WindowsInstallerPackage implements InstallerPackage {
+public class LinuxInstallerPackage implements InstallerPackage {
     @Override
     public String execute() {
-        return "executing Windows";
+        return "executing Linux";
     }
 
     @Override
     public String decode() {
 
-        return "decoding Windows";
+        return "decoding Linux";
     }
 
     @Override
     public String extract() {
-        return "extract Windows";
+        return "extract Linux";
     }
 
     @Override
     public String encode() {
-        return "encode Windows";
+        return "encode Linux";
     }
 }

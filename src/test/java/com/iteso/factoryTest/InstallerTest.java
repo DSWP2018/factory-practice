@@ -1,6 +1,10 @@
 package com.iteso.factoryTest;
 
 import com.iteso.factory.Installer;
+import com.iteso.factory.InstallerPackage;
+import com.iteso.factory.installerPackages.LinuxInstallerPackage;
+import com.iteso.factory.installerPackages.MacOSInstallerPackage;
+import com.iteso.factory.installerPackages.WindowsInstallerPackage;
 import com.iteso.factory.installers.*;
 import org.junit.Assert;
 import org.junit.Test;
@@ -8,6 +12,7 @@ import org.junit.Before;
 
 public class InstallerTest {
     Installer installer;
+    InstallerPackage installerPackage;
     @Before
     public void setUp(){
     }
@@ -23,6 +28,16 @@ public class InstallerTest {
     }
 
     @Test
+    public void WindowsInstallerPackageTest(){
+        installer = new WindowsInstallerFree();
+        Assert.assertTrue(installer.getPackage() instanceof WindowsInstallerPackage);
+        installer = new WindowsInstallerHome();
+        Assert.assertTrue(installer.getPackage() instanceof WindowsInstallerPackage);
+        installer = new WindowsInstallerProfessional();
+        Assert.assertTrue(installer.getPackage() instanceof WindowsInstallerPackage);
+    }
+
+    @Test
     public void MacOSInstallerTest(){
         installer = new MacOSInstallerFree();
         Assert.assertEquals(installer.getName(), "MacOS Installer Free");
@@ -33,6 +48,16 @@ public class InstallerTest {
     }
 
     @Test
+    public void MacOSInstallerPackageTest(){
+        installer = new MacOSInstallerFree();
+        Assert.assertTrue(installer.getPackage() instanceof MacOSInstallerPackage);
+        installer = new MacOSInstallerHome();
+        Assert.assertTrue(installer.getPackage() instanceof MacOSInstallerPackage);
+        installer = new MacOSInstallerProfessional();
+        Assert.assertTrue(installer.getPackage() instanceof MacOSInstallerPackage);
+    }
+
+    @Test
     public void LinuxInstallerTest(){
         installer = new LinuxInstallerUbuntu();
         Assert.assertEquals(installer.getName(), "Linux Installer Ubuntu");
@@ -40,5 +65,15 @@ public class InstallerTest {
         Assert.assertEquals(installer.getName(), "Linux Installer Elementary");
         installer = new LinuxInstallerFedora();
         Assert.assertEquals(installer.getName(), "Linux Installer Fedora");
+    }
+
+    @Test
+    public void LinuxInstallerPackageTest(){
+        installer = new LinuxInstallerFedora();
+        Assert.assertTrue(installer.getPackage() instanceof LinuxInstallerPackage);
+        installer = new LinuxInstallerElementary();
+        Assert.assertTrue(installer.getPackage() instanceof LinuxInstallerPackage);
+        installer = new LinuxInstallerUbuntu();
+        Assert.assertTrue(installer.getPackage() instanceof LinuxInstallerPackage);
     }
 }

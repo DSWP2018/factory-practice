@@ -2,25 +2,25 @@ package com.iteso.factory.installerPackages;
 
 import com.iteso.factory.InstallerPackage;
 
-public class WindowsInstallerPackage implements InstallerPackage {
+public class MacOSInstallerPackage implements InstallerPackage {
     @Override
     public String execute() {
-        return "executing Windows";
+        return "executing MacOS";
     }
 
     @Override
     public String decode() {
 
-        return "decoding Windows";
+        return "decoding MacOS";
     }
 
     @Override
     public String extract() {
-        return "extract Windows";
+        return "extract MacOS";
     }
 
     @Override
     public String encode() {
-        return "encode Windows";
+        return "encode MacOS";
     }
 }
