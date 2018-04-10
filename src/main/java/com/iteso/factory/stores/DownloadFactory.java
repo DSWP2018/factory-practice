@@ -1,4 +1,6 @@
-package com.iteso.factory;
+package com.iteso.factory.stores;
+
+import com.iteso.factory.installers.Installer;
 
 /**
  * Created with IntelliJ IDEA.
@@ -8,15 +10,13 @@ package com.iteso.factory;
 public abstract class DownloadFactory {
     private String targetOS = "GenericOS"; //Agregamos un tipo de pozole
 
-    public Installer downloadInstaller(String operatingSystem){
+    public Installer downloadInstaller(String operatingSystemVersion){
         Installer installer;
-
-        installer = createInstallerPackage(operatingSystem);
-
+        installer = createInstallerPackage(operatingSystemVersion);
         return installer;
     }
 
-    protected abstract Installer createInstallerPackage(String operatingSystem);
+    protected abstract Installer createInstallerPackage(String operatingSystemVersion);
 
 
     public String getTargetOS() {
