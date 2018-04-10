@@ -2,6 +2,7 @@ package com.iteso.factory.installers;
 
 import com.iteso.factory.Installer;
 import com.iteso.factory.InstallerPackage;
+import com.iteso.factory.packages.LinuxInstallerPackage;
 
 public class LinuxFreeInstaller extends Installer {
 
@@ -11,6 +12,6 @@ public class LinuxFreeInstaller extends Installer {
 
     @Override
     public InstallerPackage getPackage() {
-        return null;
+        return new LinuxInstallerPackage();
     }
 }
