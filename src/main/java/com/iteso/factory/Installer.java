@@ -1,6 +1,8 @@
 package com.iteso.factory;
 
 
+import com.iteso.factory.installerpackages.InstallerPackage;
+
 /**
  * Created with IntelliJ IDEA.
  * User: rvillalobos

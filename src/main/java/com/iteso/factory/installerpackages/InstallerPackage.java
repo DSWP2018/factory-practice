@@ -1,4 +1,4 @@
-package com.iteso.factory;
+package com.iteso.factory.installerpackages;
 
 public interface InstallerPackage {
 
