@@ -2,6 +2,7 @@ package com.iteso.factory.installers;
 
 import com.iteso.factory.Installer;
 import com.iteso.factory.InstallerPackage;
+import com.iteso.factory.installerpackage.MacOSPackage;
 
 /**
  * Created by Rodrigov on 04/09/2018.
@@ -9,11 +10,12 @@ import com.iteso.factory.InstallerPackage;
 public class MacOSProfessional extends Installer {
     public MacOSProfessional(){
         name = "MacOS Professional Installer";
+        setPackage(new MacOSPackage());
 
 
     }
 
     public InstallerPackage getPackage() {
-        return null;
+        return this.packageType;
     }
 }

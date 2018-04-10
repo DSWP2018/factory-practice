@@ -9,8 +9,14 @@ package com.iteso.factory;
 public abstract class Installer {
     public String name;
 
+    public InstallerPackage packageType;
+
     public abstract InstallerPackage getPackage();
     public String getName(){
         return name;
+    }
+
+    public void setPackage(InstallerPackage pack) {
+        this.packageType = pack;
     }
 }
