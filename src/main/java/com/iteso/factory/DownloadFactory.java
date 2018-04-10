@@ -16,7 +16,7 @@ public abstract class DownloadFactory {
         return installer;
     }
 
-    protected abstract Installer createInstallerPackage(String operatingSystem);
+    protected abstract Installer createInstallerPackage(String operatingSystemVersion);
 
 
     public String getTargetOS() {
