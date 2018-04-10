@@ -15,7 +15,7 @@ public class LinuxStore extends DownloadFactory {
         return new FreeLinux();
         else if(operatingSystemVersion == "Home")
             return  new HomeLinux();
-        else if(operatingSystemVersion == "ProfessionalLinux")
+        else if(operatingSystemVersion == "Professional")
             return new ProfessionalLinux();
         else
         return null;

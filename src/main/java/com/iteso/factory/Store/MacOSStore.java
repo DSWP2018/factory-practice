@@ -7,16 +7,16 @@ import com.iteso.factory.installers.HomeMacOS;
 import com.iteso.factory.installers.ProfessionalMacOS;
 import com.iteso.factory.installers.ProfessionalWindows;
 
-public class MacOS extends DownloadFactory {
+public class MacOSStore extends DownloadFactory {
 
     @Override
     protected Installer createInstallerPackage(String operatingSystemVersion) {
-        setTargetOS("MacOS");
+        setTargetOS("MacOSStore");
         if(operatingSystemVersion == "Free")
             return new FreeMacOS();
         else if(operatingSystemVersion == "Home")
             return new HomeMacOS();
-        else if(operatingSystemVersion == "ProfessionalLinux")
+        else if(operatingSystemVersion == "Professional")
             return new ProfessionalMacOS();
         else
             return null;

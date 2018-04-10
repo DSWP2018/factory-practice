@@ -14,7 +14,7 @@ public class WindowsStore extends DownloadFactory {
             return new FreeWindows();
         else if(operatingSystemVersion == "Home")
             return  new HomeWindows();
-        else if(operatingSystemVersion == "ProfessionalLinux")
+        else if(operatingSystemVersion == "Professional")
             return new ProfessionalWindows();
         else
             return null;

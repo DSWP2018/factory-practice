@@ -5,21 +5,21 @@ import com.iteso.factory.InstallerPackage;
 public class MacOSPackage implements InstallerPackage {
     @Override
     public String execute() {
-        return "executeando MacOS";
+        return "executeando MacOSStore";
     }
 
     @Override
     public void decode() {
-        System.out.println("decodificando MacOS");
+        System.out.println("decodificando MacOSStore");
     }
 
     @Override
     public void extract() {
-        System.out.println("extrayendo MacOS");
+        System.out.println("extrayendo MacOSStore");
     }
 
     @Override
     public void encode() {
-        System.out.println("codificando MacOS");
+        System.out.println("codificando MacOSStore");
     }
 }
