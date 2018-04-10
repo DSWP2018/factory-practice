@@ -6,6 +6,7 @@ import com.iteso.factory.InstallerPackage;
 public class MacFreeInstaller extends Installer{
     public MacFreeInstaller() {
         name = "Mac Free Installer";
+        System.out.println("Free installer");
     }
 
     @Override

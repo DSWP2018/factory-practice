@@ -9,6 +9,7 @@ import com.iteso.factory.InstallerPackage;
 public class WindowsFreeInstaller extends Installer {
     public WindowsFreeInstaller(){
         name = "Windows Free Installer";
+        System.out.println("Free installer");
     }
 
     public InstallerPackage getPackage() {

@@ -6,6 +6,7 @@ import com.iteso.factory.InstallerPackage;
 public class LinuxHomeInstaller extends Installer{
     public LinuxHomeInstaller() {
         name = "Linux Home Installer";
+        System.out.println("Home installer");
     }
 
     @Override

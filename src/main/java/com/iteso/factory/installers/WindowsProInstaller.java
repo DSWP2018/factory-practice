@@ -9,6 +9,7 @@ import com.iteso.factory.InstallerPackage;
 public class WindowsProInstaller extends Installer {
     public WindowsProInstaller(){
         name = "Windows Professional Installer";
+        System.out.println("Professional installer");
     }
 
     public InstallerPackage getPackage() {

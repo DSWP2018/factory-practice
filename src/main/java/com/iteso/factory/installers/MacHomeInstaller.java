@@ -6,6 +6,7 @@ import com.iteso.factory.InstallerPackage;
 public class MacHomeInstaller extends Installer{
     public MacHomeInstaller() {
         name = "Mac Home Installer";
+        System.out.println("Home installer");
     }
 
     @Override

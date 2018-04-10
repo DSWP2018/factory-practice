@@ -4,7 +4,7 @@ import com.iteso.factory.installers.MacFreeInstaller;
 import com.iteso.factory.installers.MacHomeInstaller;
 import com.iteso.factory.installers.MacProInstaller;
 
-public class MacFactory {
+public class MacFactory implements InstallerPackage {
     public Installer getOs(String version) {
         if (version == null){
             return null;
@@ -16,5 +16,25 @@ public class MacFactory {
             return new MacProInstaller();
         }
         return null;
+    }
+
+    @Override
+    public void execute() {
+        System.out.println("Mac installer execution...");
+    }
+
+    @Override
+    public void decode() {
+        System.out.println("Mac installer decoding...");
+    }
+
+    @Override
+    public void extract() {
+        System.out.println("Mac installer extracting...");
+    }
+
+    @Override
+    public void encode() {
+        System.out.println("Mac installer encoding...");
     }
 }

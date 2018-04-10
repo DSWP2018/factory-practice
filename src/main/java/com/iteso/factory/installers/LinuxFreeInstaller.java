@@ -6,6 +6,7 @@ import com.iteso.factory.InstallerPackage;
 public class LinuxFreeInstaller extends Installer{
     public LinuxFreeInstaller() {
         name = "Linux Free Installer";
+        System.out.println("Free installer");
     }
 
     @Override

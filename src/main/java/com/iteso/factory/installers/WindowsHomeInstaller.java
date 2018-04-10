@@ -9,6 +9,7 @@ import com.iteso.factory.InstallerPackage;
 public class WindowsHomeInstaller extends Installer {
     public WindowsHomeInstaller(){
         name = "Windows Home Installer";
+        System.out.println("Home installer");
     }
 
     public InstallerPackage getPackage() {
