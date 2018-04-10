@@ -6,7 +6,7 @@ import com.iteso.factory.Package.WindowsPackage;
 
 public class ProfessionalWindows extends Installer {
     public ProfessionalWindows(){
-        name = "ProfessoionalWindows";
+        name = "ProfessionalWindows";
     }
     @Override
     public InstallerPackage getPackage() {

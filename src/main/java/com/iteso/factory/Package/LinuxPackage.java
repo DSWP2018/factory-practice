@@ -4,8 +4,8 @@ import com.iteso.factory.InstallerPackage;
 
 public class LinuxPackage implements InstallerPackage {
     @Override
-    public void execute() {
-        System.out.println("executeando Linux");
+    public String execute() {
+        return "executeando Linux";
     }
 
     @Override

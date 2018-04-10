@@ -4,8 +4,8 @@ import com.iteso.factory.InstallerPackage;
 
 public class WindowsPackage implements InstallerPackage {
     @Override
-    public void execute() {
-        System.out.println("executeando Windows");
+    public String execute() {
+        return "executeando Windows";
     }
 
     @Override

@@ -2,7 +2,7 @@ package com.iteso.factory;
 
 public interface InstallerPackage {
 
-    void execute();
+    String execute();
     void decode();
     void extract();
     void encode();

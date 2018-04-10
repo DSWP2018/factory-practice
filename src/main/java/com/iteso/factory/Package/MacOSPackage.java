@@ -4,8 +4,8 @@ import com.iteso.factory.InstallerPackage;
 
 public class MacOSPackage implements InstallerPackage {
     @Override
-    public void execute() {
-        System.out.println("executeando MacOS");
+    public String execute() {
+        return "executeando MacOS";
     }
 
     @Override
