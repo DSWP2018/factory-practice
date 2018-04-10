@@ -6,4 +6,5 @@ public interface InstallerPackage {
     void decode();
     void extract();
     void encode();
+
 }

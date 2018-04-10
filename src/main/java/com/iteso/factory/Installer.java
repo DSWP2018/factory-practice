@@ -13,4 +13,5 @@ public abstract class Installer {
     public String getName(){
         return name;
     }
+
 }
