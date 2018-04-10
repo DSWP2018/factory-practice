@@ -8,7 +8,6 @@ package com.iteso.factory;
  */
 public abstract class Installer {
     public String name;
-
     public abstract InstallerPackage getPackage();
     public String getName(){
         return name;
