@@ -11,24 +11,24 @@ public class Main {
         Linux linux = new Linux();
 
         Installer installerMac = mac.downloadInstaller(Constants.FREE);
-        mac.getTargetOS();
-        installerMac.getName();
+        System.out.println(mac.getTargetOS());
+        System.out.println(installerMac.getName());
         installerMac.getPackage().extract();
         installerMac.getPackage().execute();
         installerMac.getPackage().encode();
         installerMac.getPackage().decode();
 
         Installer installerWindows = windows.downloadInstaller(Constants.HOME);
-        windows.getTargetOS();
-        installerWindows.getName();
+        System.out.println(windows.getTargetOS());
+        System.out.println(installerWindows.getName());
         installerWindows.getPackage().decode();
         installerWindows.getPackage().encode();
         installerWindows.getPackage().execute();
         installerWindows.getPackage().extract();
 
         Installer installerLinux = linux.downloadInstaller(Constants.PROFESSIONAL);
-        linux.getTargetOS();
-        installerLinux.getName();
+        System.out.println(linux.getTargetOS());
+        System.out.println(installerLinux.getName());
         installerLinux.getPackage().decode();
         installerLinux.getPackage().execute();
         installerLinux.getPackage().extract();
