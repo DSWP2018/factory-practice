@@ -2,7 +2,7 @@ package com.iteso.factory.installers;
 
 import com.iteso.factory.Installer;
 import com.iteso.factory.InstallerPackage;
-import com.iteso.factory.installer_packages.InstallerWindowsPackage;
+import com.iteso.factory.installer_packages.WindowsInstallerPackage;
 
 public class WindowsFreeInstaller extends Installer {
     public WindowsFreeInstaller(){
@@ -11,6 +11,6 @@ public class WindowsFreeInstaller extends Installer {
 
     @Override
     public InstallerPackage getPackage() {
-        return new InstallerWindowsPackage();
+        return new WindowsInstallerPackage();
     }
 }

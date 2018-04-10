@@ -2,7 +2,7 @@ package com.iteso.factory.installer_packages;
 
 import com.iteso.factory.InstallerPackage;
 
-public class InstallerWindowsPackage implements InstallerPackage {
+public class WindowsInstallerPackage implements InstallerPackage {
     @Override
     public void execute() {
         System.out.println("Executing Windows");
