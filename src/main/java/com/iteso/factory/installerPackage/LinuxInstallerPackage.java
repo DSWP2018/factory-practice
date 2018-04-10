@@ -4,22 +4,22 @@ import com.iteso.factory.InstallerPackage;
 
 public class LinuxInstallerPackage implements InstallerPackage {
     @Override
-    public void execute() {
-        System.out.println("Executing Linux Installer Package");
+    public String execute() {
+        return "Executing Linux Installer Package";
     }
 
     @Override
-    public void decode() {
-        System.out.println("Decoding Linux Installer Package");
+    public String decode() {
+        return "Decoding Linux Installer Package";
     }
 
     @Override
-    public void extract() {
-        System.out.println("Extracting Linux Installer Package");
+    public String extract() {
+        return "Extracting Linux Installer Package";
     }
 
     @Override
-    public void encode() {
-        System.out.println("Encoding Linux Installer Package");
+    public String  encode() {
+        return "Encoding Linux Installer Package";
     }
 }

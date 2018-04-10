@@ -4,22 +4,22 @@ import com.iteso.factory.InstallerPackage;
 
 public class MacOSInstallerPackage implements InstallerPackage {
     @Override
-    public void execute() {
-        System.out.println("Executing MacOS Installer Package");
+    public String execute() {
+        return "Executing MacOS Installer Package";
     }
 
     @Override
-    public void decode() {
-        System.out.println("Decoding MacOS Installer Package");
+    public String decode() {
+        return "Decoding MacOS Installer Package";
     }
 
     @Override
-    public void extract() {
-        System.out.println("Extracting MacOS Installer Package");
+    public String extract() {
+        return "Extracting MacOS Installer Package";
     }
 
     @Override
-    public void encode() {
-        System.out.println("Encoding MacOS Installer Package");
+    public String encode() {
+        return "Encoding MacOS Installer Package";
     }
 }

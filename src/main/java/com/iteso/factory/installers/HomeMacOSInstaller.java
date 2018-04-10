@@ -9,7 +9,7 @@ import com.iteso.factory.installerPackage.MacOSInstallerPackage;
  */
 public class HomeMacOSInstaller extends Installer {
     public HomeMacOSInstaller(){
-        name = "MacOS Free Installer";
+        name = "MacOS Home Installer";
 
 
     }
