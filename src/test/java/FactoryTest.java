@@ -77,7 +77,31 @@ public class FactoryTest {
     @Test
     public void WindowsInstallerPackage(){
         installer = new FreeWindowsInstaller();
+        assertEquals("Executing Windows Installer Package", installer.getPackage().execute() );
         assertEquals("Decoding Windows Installer Package", installer.getPackage().decode() );
+        assertEquals("Extracting Windows Installer Package", installer.getPackage().extract() );
+        assertEquals("Encoding Windows Installer Package", installer.getPackage().encode() );
+
+    }
+
+    @Test
+    public void LinuxInstallerPackage(){
+        installer = new FreeLinuxInstaller();
+        assertEquals("Executing Linux Installer Package", installer.getPackage().execute() );
+        assertEquals("Decoding Linux Installer Package", installer.getPackage().decode() );
+        assertEquals("Extracting Linux Installer Package", installer.getPackage().extract() );
+        assertEquals("Encoding Linux Installer Package", installer.getPackage().encode() );
+
+    }
+
+    @Test
+    public void MacOSInstallerPackage(){
+        installer = new HomeMacOSInstaller();
+        assertEquals("Executing MacOS Installer Package", installer.getPackage().execute() );
+        assertEquals("Decoding MacOS Installer Package", installer.getPackage().decode() );
+        assertEquals("Extracting MacOS Installer Package", installer.getPackage().extract() );
+        assertEquals("Encoding MacOS Installer Package", installer.getPackage().encode() );
+
     }
 
 }
